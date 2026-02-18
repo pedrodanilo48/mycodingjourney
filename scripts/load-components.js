@@ -1,6 +1,6 @@
 async function carregarNavbar() {
 try {
-const resposta = await fetch('../mycodingjourney/pages/navbar.html');
+const resposta = await fetch('/mycodingjourney/pages/navbar.html');
 const html = await resposta.text();
 const placeholder = document.getElementById('navbar-placeholder');
 if (placeholder) {
