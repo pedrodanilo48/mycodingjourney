@@ -2,10 +2,12 @@
 module.exports = {
   content: [
     "./index.html",
-    "./scripts/**/*.{js,ts}",
+    "./navbar.html",
+    "./pages/**/*.html",   // Esta linha é crucial para ler o javascript.html
+    "./scripts/**/*.js"
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-};
+}
