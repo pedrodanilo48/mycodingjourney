@@ -23,3 +23,18 @@ menu.classList.toggle('hidden');
 }
 
 document.addEventListener('DOMContentLoaded', carregarNavbar);
+
+async function carregarFooter() {
+try {
+const resposta = await fetch('/mycodingjourney/pages/footer.html');
+const html = await resposta.text();
+const placeholder = document.getElementById('footer-placeholder');
+if (placeholder) {
+placeholder.innerHTML = html;
+configurarMenuMobile();
+}
+} catch (erro) {
+console.error('Erro:', erro);
+}
+}
+document.addEventListener('DOMContentLoaded', carregarFooter);
