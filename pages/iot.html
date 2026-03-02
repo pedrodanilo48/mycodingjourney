@@ -16,12 +16,16 @@
          <h2 class="text-center text-2xl font-bold">Resistor "pull down"</h2>
          <img src="../images/iot/pulldown.png" alt="Resistor pull down" class="w-full rounded-lg shadow-lg">     
          <ul class="list-disc list-outside ml-10 mt-4 space-y-2 text-black">
-          <li>Se quisermos que o circuito receba 0 quando não houver qualquer sinal na porta de entrada, usamos um resistor pull down, isto é, *conectado ao ground*.</li>
+          <li>Se quisermos que o circuito receba 0 quando não houver qualquer sinal na porta de entrada, usamos um resistor pull down, isto é, <em>conectado ao ground</em>.</li>
           <li>Circuito aberto: Toda e qualquer tensão mínima que surja da natureza no pino é rapidamente aterrada, retornando o valor 0. Sem o resistor, isso não acontece e o valor fica flutuando.</li>
           <li>Circuito fechado: A entrada do microprocessador (o circuito estando fechado ou aberto) sempre funciona como um voltímetro (diferente de uma lâmpada ou motor). Isto é, possui uma impedância tão alta (milhões de ohms) que está alí apenas para saber se há ou não tensão no circuito. Como o resistor está em paralelo (apesar de não parecer), a tensão nele e no pino é a mesma e um pouquinho de corrente passa por ele e vai para o terra.</li>
           <li>Chave aberta: Microprocessador lê "low".</li>     
-          <li>Chave fechada: Microprocessador lê "high".</li>    <img src="../images/iot/led.png" alt="led" class="w-full rounded-lg shadow-lg">     
-          <li>Aprendi que o LED tem o negativo como catodo e o positivo como anodo (perna torta) e que numa pilha a nomenclatura é o contrário.</li>
+          <li>Chave fechada: Microprocessador lê "high".</li>    
+          <h2>Resistor "pull up"</h2>
+          <img src="../images/iot/pullup.png" alt="Resistor pull up" class="w-full rounded-lg shadow-lg">     
+          <li>Se quisermos que o circuito receba 1 quando não houver qualquer sinal na porta de entrada, usamos um resistor pull up, isto é, <em>conectado ao VCC</em>.</li>
+          <li>Circuito aberto: Toda e qualquer tensão mínima que surja da natureza no pino é rapidamente aterrada, retornando o valor 1. Sem o resistor, isso não acontece e o valor fica flutuando.</li>
+          <li>Circuito fechado: Com o resistor pull up, a tensão no pino é 0 quando o circuito está fechado, isto é, o microprocessador lê "low".</li>
          </ul>   
     </div>
 </div>
