@@ -70,6 +70,31 @@
           <li>Asynchronous functions do not block execution and allow other code to run while they are running.</li>
          </ul>
     </div>
+    <div class="col-span-2 col-start-2 mt-4">
+        <img src="../images/javascript/jslibraries.png" alt="JavaScript Libraries" class="w-full rounded-lg shadow-lg">   
+        <h2 class="text-center text-2xl font-bold">JavaScript Libraries</h2>
+         <ul class="list-disc list-outside ml-10 mt-4 space-y-2 text-black">
+            <li>Aprendi que existem centenas de milhares de bibliotecas no JavaScript, cada uma buscando sintetizar um código (uma ação). Em vez de digitar algo complexo em ECMAScript (vanilla JavaScript), você simplesmente usa uma biblioteca com uma linguagem mais acessível e ela depois transforma o código em vanilla js para você.</li>
+
+            <li>Simplesmente digitar "import axios from "axios";" não funcionaria. Antes é necessário instalar essa biblioteca com "npm install axios".</li>
+            <li>Ainda há outro passo para funcionar: Um "bundler" (Vite, Webpack, Parcel), pois o navegador não consegue ler essa ação.</li>
+
+            <li>Se não fosse utilizar esse meio, precisaria fazer à maneira antiga:</li>
+
+            <p>
+                <pre>
+                <code>
+                <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script><br>
+
+                <script><br>
+                // Agora você não usa 'import', o axios já está disponível globalmente<br>
+                axios.get('https://api.github.com/repos/facebook/react');<br>
+                </script>
+                </code>
+                </pre>
+            <p>
+         </ul>
+    </div>
 </div>
 <div id="footer-placeholder"></div>
 <script src="../scripts/load-components.js"></script>
