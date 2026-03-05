@@ -1,0 +1,20 @@
+<div id="navbar-placeholder"></div>
+<div class="grid grid-cols-4 gap-1">
+    <div class="col-span-2 col-start-2 mt-4">
+        <h1 class="text-4xl font-bold text-center mt-32 mb-6">Things I learned in General</h1>
+        <img src="../images/geral/soapvsrest.png" alt="SOAP vs REST" class="w-full rounded-lg shadow-lg">   
+        <h2 class="text-center text-2xl font-bold">SOAP vs REST</h2>
+         <ul class="list-disc list-outside ml-10 mt-4 space-y-2 text-black">
+            <li>SOAP significa "Simple Object Access Protocol" e é um "protocolo de mensagens" (permite a comunicação entre sistemas) e surgiu porque era difícil fazer sistemas diferentes (como Windows e Linux) se comunicarem. 
+            Para tal, o SOAP usou HTTP e XML para conectar qualquer sistema (mesmo com linguagens de programação diferentes).</li>
+            <li>Ao contrário do REST, que é um estilo arquitetural, o SOAP é rígido e a comunicação precisa seguir seus padrões para que possa ocorrer (XML rigoroso).</li>
+            <li>O XML é o conteúdo escrito (seguindo regras rígidas), enquanto o HTTP é usado por ele para levar a mensagem de um computador para outro. Entretanto, ele poderia usar SMTP (e-mail) ou FTP para essa transferência, o que é raríssimo, já que seriam necessárias configurações de rede complexas para portas específicas para os firewalls, em vez de apenas 80 (http - não criptografado) e 433 (https - criptografado).
+            Ainda assim, o SOAP conta com a WS-Security, assinando digitalmente e criptografando o XML (seja por HTTP/HTTPS, FTP ou SMTP).
+            </li>
+            <h2>Diferenças entre SOAP e REST:</h2>
+            <li>SOAP aceita apenas XML como formato de mensagem, enquanto o REST suporta diversos formatos, como JSON, HTML e texto.</li>
+            <li>SOAP usa POST para tudo (em vez de GET, DELETE, POST e GET), já que sua ações estão descritas no XML, não na URL.</li>
+            <li>NO Node.js, o REST usa fetch() e axios.get(). Caso queira usar SOAP, é preciso instalar a biblioteca soap, carregar o WSDL e criar um cliente específico.</li>
+         </ul>     
+    </div>
+</div>
